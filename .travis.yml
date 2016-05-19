@@ -2,3 +2,10 @@ language: node_js
 node_js:
   - "5.6"
   - "4.1"
+
+addons:
+    code_climate:
+        repo_token: 44312d45f23c3ace475381ef553b4d8d555521a7f7c87718990d6921a7ad5442
+
+after_script:
+  - codeclimate-test-reporter < coverage/lcov.info

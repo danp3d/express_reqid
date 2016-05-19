@@ -1,10 +1,10 @@
 {
   "name": "express_reqid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware to include a unique request ID (for request tracing)",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --reporter spec",
+    "test": "mocha --recursive --reporter spec && npm run coverage",
     "coverage": "istanbul cover _mocha -- --recursive -R spec",
     "coverage-win": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive -R spec"
   },
