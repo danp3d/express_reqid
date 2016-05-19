@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/danp3d/express_reqid.svg?branch=master)](https://travis-ci.org/danp3d/express_reqid)
 [![Code Climate](https://codeclimate.com/github/danp3d/express_reqid/badges/gpa.svg)](https://codeclimate.com/github/danp3d/express_reqid)
 [![Issue Count](https://codeclimate.com/github/danp3d/express_reqid/badges/issue_count.svg)](https://codeclimate.com/github/danp3d/express_reqid)
 [![Test Coverage](https://codeclimate.com/github/danp3d/express_reqid/badges/coverage.svg)](https://codeclimate.com/github/danp3d/express_reqid/coverage)
