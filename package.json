@@ -1,6 +1,6 @@
 {
   "name": "express_reqid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Express middleware to include a unique request ID (for request tracing)",
   "main": "index.js",
   "scripts": {

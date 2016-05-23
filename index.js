@@ -11,9 +11,7 @@ module.exports = (options) => (req, res, next) => {
         req.id = String(uuid.v4()).valueOf()
     }
     
-    if (!res.headers[headerName]) {
-        res.setHeader(headerName, String(req.id).valueOf())
-    }
+    res.setHeader(headerName, String(req.id).valueOf())
     
     return next()
 }

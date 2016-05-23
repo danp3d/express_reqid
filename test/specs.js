@@ -50,26 +50,6 @@ describe("RequestID", () => {
         })
     })
     
-    it('should not override response header', (done) => {
-        const resId = 'a;lsdkfjqwoerht'
-        
-        let id = uuid.v4()
-        let req = {
-            headers: { }
-        }
-        req.headers[headerName] = String(id).valueOf()
-        
-        let res = getRes()
-        res.headers[headerName] = resId
-        
-        middleware(req, res, () => {
-            req.should.have.property('id', id)
-            res.headers.should.have.property(headerName, resId)
-            
-            done()
-        })
-    })
-    
     it('should work with other headerNames', (done) => {
         let middleware = reqid({ 'headerName': 'shabushabu' })
         let req = { headers: {} }
