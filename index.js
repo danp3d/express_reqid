@@ -1,6 +1,6 @@
 "use strict";
 
-const uuid = require('node-uuid')
+const uuid = require('uuid')
 
 module.exports = (options) => (req, res, next) => {
     const headerName = (options || {}).headerName || 'X-Request-Id'
